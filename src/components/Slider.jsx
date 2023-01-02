@@ -43,6 +43,7 @@ function Slider() {
   if (listings.length === 0) {
     return <></>
   }
+  console.log("listing",listings)
 
   return (
     listings && (
@@ -57,7 +58,7 @@ function Slider() {
             >
               <div
                 style={{
-                  background: `url(${data.imgUrls[0]}) center no-repeat`,
+                  background: `url(${data.imageUrls[0]}) center no-repeat`,
                   backgroundSize: 'cover',
                 }}
                 className='swiperSlideDiv'
